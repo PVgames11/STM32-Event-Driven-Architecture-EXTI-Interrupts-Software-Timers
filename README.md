@@ -1,4 +1,4 @@
-# STM32 Event-Driven Architecture: EXTI Interrupts & Software Timers ⚡
+# STM32 Event-Driven Architecture: EXTI Interrupts & Software Timers
 
 Este repositório contém a implementação de um projeto em C para microcontroladores STM32, com o objetivo de demonstrar o controle de hardware de baixo nível utilizando interrupções externas (EXTI), eliminando completamente o uso de *polling* para a leitura de entradas físicas.
 
@@ -23,7 +23,7 @@ O sistema foi configurado para responder a eventos na borda de descida (*Falling
 * **Conceito:** Uso de *Flags* globais e temporizador de software não-bloqueante.
 * **Funcionamento:** A interrupção `EXTI2` acende o LED 2 e altera o valor de uma Flag global (`Bot_2 = 1`). A ISR é encerrada rapidamente. O `while(1)` identifica a Flag, inicia um contador (`cnt_Bot_2`) e gerencia o tempo (1 segundo) para desligar o LED, mantendo o sistema responsivo durante o processo.
 
-## ⚙️ Como executar
+## Como executar
 
 1. Clone este repositório.
 2. Importe o projeto no STM32CubeIDE (Recomendado v1.9).
